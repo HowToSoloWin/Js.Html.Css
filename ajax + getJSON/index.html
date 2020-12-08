@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js" ></script>
+</head>
+<body>
+    <input oninput="search(this.value)" />
+    <div id="myID"></div>
+    <span>USD:</span><span id="usd"></span><br/>
+    <span>EUR:</span><span id="eur"></span><br/>
+    <span>RUB:</span><span id="rub"></span>
+    
+    <select id="currencies" onchange="rateManager.showRate(this.value, 'custom')"></select>
+    <div id="custom"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
