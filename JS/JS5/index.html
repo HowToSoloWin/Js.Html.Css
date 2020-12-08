@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+        table {
+            width: 100%;
+        }
+        #update {
+            display: none;
+        }
+        .block {
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="showData(data)">Show data</button>
+    <form>
+         <input id="name" placeholder="Name" />
+         <input id="age" placeholder="Age" type="number" />
+         <input id="avatar" placeholder="Avatar URL" />
+         <input id="addBtn" type="button" value="Add" onclick="addUser()" />
+         <div id="update">
+             <input type="button" value="OK" onclick="updateUser()" />
+             <input type="button" value="Cancel" onclick="cancel()" />
+         </div>
+    </form>
+    <button onclick="showColorBlocks()">Show blocks</button>
+    <script src="script.js" ></script>
+    <br/>
+    <input placeholder="Search" oninput="search(this.value)"/>
+</body>
+</html>
