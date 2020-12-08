@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jqury.js"></script>
+    <style>
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.6);
+            top: 0;
+            left: 0;            
+        }
+        .modal {
+            width: 320px;
+            height: 240px;
+            background: white;
+            border-radius: 4px;
+            padding: 16px;
+            margin: 25% auto 0 auto;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showOverlay()">Show overlay</button>
+    <div class="overlay hidden">
+        <div class="modal">
+            <div id="username"></div>
+            <button onclick="hideOverlay()">Close</button>
+        </div>
+    </div>
+    <script src="srcipt.js"></script>
+</body>
+</html>
